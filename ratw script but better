@@ -1,3 +1,14 @@
+--[[
+ .____                  ________ ___.    _____                           __                
+ |    |    __ _______   \_____  \\_ |___/ ____\_ __  ______ ____ _____ _/  |_  ___________ 
+ |    |   |  |  \__  \   /   |   \| __ \   __\  |  \/  ___// ___\\__  \\   __\/  _ \_  __ \
+ |    |___|  |  // __ \_/    |    \ \_\ \  | |  |  /\___ \\  \___ / __ \|  | (  <_> )  | \/
+ |_______ \____/(____  /\_______  /___  /__| |____//____  >\___  >____  /__|  \____/|__|   
+         \/          \/         \/    \/                \/     \/     \/                   
+          \_Welcome to LuaObfuscator.com   (Alpha 0.10.3) ~  Much Love, Ferib 
+
+]]--
+
 local v0 = loadstring(game:HttpGet("https://sirius.menu/rayfield"))();
 local v1 = v0:CreateWindow({Name="RACE AROUND THE WORLD SCRIPT",LoadingTitle="Cex hub so cool",LoadingSubtitle="by cex wowowowwowowowowowowo",ConfigurationSaving={Enabled=false,FolderName=nil,FileName="cexhub"},Discord={Enabled=false,Invite="noinvitelink",RememberJoins=true},KeySystem=false,KeySettings={Title="Untitled",Subtitle="Key System",Note="No method of obtaining the key is provided",FileName="Key",SaveKey=true,GrabKeyFromSite=false,Key={"Hello"}}});
 local v2 = v1:CreateTab("Main", nil);
@@ -212,6 +223,21 @@ end});
 local v3 = v2:CreateSection("Los Angeles");
 local v4 = v2:CreateButton({Name="",Callback=function()
 end});
+local v3 = v2:CreateSection("Marrakesh");
+local v4 = v2:CreateButton({Name="DISABLE PUDDLES",Callback=function()
+	for v47, v48 in pairs(workspace.Legs.Marrakesh.Solo.Lanes:GetDescendants()) do
+		if (v48.Parent.Name == "Puddles") then
+			local v81 = 0 + 0;
+			while true do
+				if (v81 == (0 + 0)) then
+					v48.CanTouch = false;
+					task.wait();
+					break;
+				end
+			end
+		end
+	end
+end});
 local v3 = v2:CreateSection("Nairobi");
 local v4 = v2:CreateButton({Name="CHECKPOINT CHALLENGE JUMPING",Callback=function()
 	while task.wait() do
@@ -267,6 +293,9 @@ local v4 = v2:CreateButton({Name="PEARLS",Callback=function()
 			end
 		end
 	end
+end});
+local v3 = v2:CreateSection("Paris");
+local v4 = v2:CreateButton({Name="",Callback=function()
 end});
 local v3 = v2:CreateSection("Port of Spain");
 local v4 = v2:CreateButton({Name="FIRE OBBY",Callback=function()
