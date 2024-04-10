@@ -212,21 +212,6 @@ end});
 local v3 = v2:CreateSection("Los Angeles");
 local v4 = v2:CreateButton({Name="",Callback=function()
 end});
-local v3 = v2:CreateSection("Marrakesh");
-local v4 = v2:CreateButton({Name="DISABLE PUDDLES",Callback=function()
-	for v47, v48 in pairs(workspace.Legs.Marrakesh.Solo.Lanes:GetDescendants()) do
-		if (v48.Parent.Name == "Puddles") then
-			local v81 = 0 + 0;
-			while true do
-				if (v81 == (0 + 0)) then
-					v48.CanTouch = false;
-					task.wait();
-					break;
-				end
-			end
-		end
-	end
-end});
 local v3 = v2:CreateSection("Nairobi");
 local v4 = v2:CreateButton({Name="CHECKPOINT CHALLENGE JUMPING",Callback=function()
 	while task.wait() do
@@ -282,9 +267,6 @@ local v4 = v2:CreateButton({Name="PEARLS",Callback=function()
 			end
 		end
 	end
-end});
-local v3 = v2:CreateSection("Paris");
-local v4 = v2:CreateButton({Name="",Callback=function()
 end});
 local v3 = v2:CreateSection("Port of Spain");
 local v4 = v2:CreateButton({Name="FIRE OBBY",Callback=function()
