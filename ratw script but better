@@ -128,7 +128,13 @@ local v4 = v2:CreateButton({Name="RIDE THE CAMELS",Callback=function()
 	end
 end});
 local v4 = v2:CreateButton({Name="DIAMOND",Callback=function()
-	local v6 = 772 - (201 + 571);
+	for _, v in pairs(workspace.Legs.Giza.Solo:GetDescendants()) do
+    if v.Name == "TouchInterest" and v.Parent.Parent.Name == "Spikes" then
+        v:Destroy()
+        task.wait()
+    end
+end
+local v6 = 772 - (201 + 571);
 	local v7;
 	local v8;
 	local v9;
