@@ -180,6 +180,38 @@ local v3 = v2:CreateSection("Johannesburg");
 local v4 = v2:CreateButton({Name="HORIZONTAL",Callback=function()
 	game.workspace.Legs.Johannesburg.Horizontal.ChallengeCluebox.Sensor.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame;
 end});
+
+local v3 = v2:CreateSection("King George Island");
+local v4 = v2:CreateButton({Name="SHOW LETTER LOCATION",Callback=function()
+for _, v in pairs(workspace.Legs:waitForChild("King George Island").Team.Letters:GetDescendants()) do
+    if v.Name == "TextLabel" then
+        local hl = Instance.new("Highlight", v.Parent.Parent)
+hl.FillTransparency = 0.3
+local bg = Instance.new("BillboardGui", v.Parent.Parent)
+bg.Active = true
+bg.Name = "cex"
+bg.ClipsDescendants = true
+bg.ResetOnSpawn = false
+bg.AlwaysOnTop = true
+bg.Size = UDim2.new(16, 0, 4, 0)
+bg.StudsOffset = Vector3.new(0, 1, 0)
+local tl = Instance.new("TextLabel", bg)
+tl.BackgroundTransparency = 1
+tl.BorderSizePixel = 0
+tl.Name = "cex"
+tl.Font = Enum.Font.Oswald
+tl.Size = UDim2.new(1, 0, 1, 0)
+tl.Text = v.Text
+tl.TextColor3 = Color3.fromRGB(255, 0, 0)
+tl.TextScaled = true
+tl.TextSize = 14
+tl.TextStrokeTransparency = 0
+tl.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+task.wait()
+    end
+    end
+end});
+
 local v3 = v2:CreateSection("Kyoto");
 local v4 = v2:CreateButton({Name="",Callback=function()
 end});
