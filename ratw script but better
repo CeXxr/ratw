@@ -501,13 +501,18 @@ local v4 = v2:CreateButton({Name="Rejoin",Callback=function()
 	game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, game.JobId, game.Players.LocalPlayer)
 end});
 
-local v3 = v2:CreateSection("Reveal Team's Cash Amount");
-local v4 = v2:CreateButton({Name="Rejoin",Callback=function()
+local v3 = v2:CreateSection("Print Team's Cash Amount");
+local v4 = v2:CreateButton({Name="Print Cash",Callback=function()
 	game("StarterGui"):SetCore("DevConsoleVisible", true);
-
+for _, v in pairs(game:GetService("ReplicatedStorage").Money:GetChildren()) do
+if v.Parent.Name == "Money" then
+print("The ".. v.Name.. " team has ".. v.Value.. " money")
+task.wait()
+end
+end
 end});
 
 local v3 = v2:CreateSection("Destroy GUI");
-local v4 = v2:CreateButton({Name="Rejoin",Callback=function()
-	v1:Destroy()
+local v4 = v2:CreateButton({Name="Destroy GUI",Callback=function()
+	v0:Destroy()
 end});
