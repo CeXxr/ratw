@@ -494,3 +494,20 @@ local v4 = v2:CreateButton({Name="Hide Invisible Walls",Callback=function()
 		end
 	end
 end});
+
+local v2 = v1:CreateTab("Other", nil);
+local v3 = v2:CreateSection("Rejoin");
+local v4 = v2:CreateButton({Name="Rejoin",Callback=function()
+	game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, game.JobId, game.Players.LocalPlayer)
+end});
+
+local v3 = v2:CreateSection("Reveal Team's Cash Amount");
+local v4 = v2:CreateButton({Name="Rejoin",Callback=function()
+	game("StarterGui"):SetCore("DevConsoleVisible", true);
+
+end});
+
+local v3 = v2:CreateSection("Destroy GUI");
+local v4 = v2:CreateButton({Name="Rejoin",Callback=function()
+	v1:Destroy()
+end});
