@@ -1,1 +1,3 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua", true))() loadstring(game:HttpGet("https://raw.githubusercontent.com/CeXxr/ratw/main/ratw%20script%20but%20better"))() loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua", true))() 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CeXxr/ratw/main/ratw%20script%20but%20better"))() 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CeXxr/infyieldmodded/main/infyieldmodded"))()
