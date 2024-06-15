@@ -502,7 +502,7 @@ local v4 = v2:CreateButton({Name="Rejoin",Callback=function()
 end});
 
 local v3 = v2:CreateSection("Print Team's Cash Amount");
-local v4 = v2:CreateButton({Name="Print Cash",Callback=function()
+local v4 = v2:CreateButton({Name="Print Cash (Open console to view / Click F9)",Callback=function()
 for _, v in pairs(game:GetService("ReplicatedStorage").Money:GetChildren()) do
 if v.Parent.Name == "Money" then
 print("The ".. v.Name.. " team has ".. v.Value.. " cash")
